@@ -19,8 +19,13 @@
   top: 40px;
   left: 60px;
   font-size: 56px;
-  /* transform: rotate(15deg); */
+  width: 80px;
+  fill: #fff;
 }
+/* 
+.link-primary {
+
+} */
 
 .header-primary-div {
   position: absolute;
