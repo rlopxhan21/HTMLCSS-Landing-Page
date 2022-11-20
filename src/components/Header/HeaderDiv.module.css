@@ -1,0 +1,145 @@
+.header {
+  height: 95vh;
+  color: #fff;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 133, 0.8)
+    ),
+    url(../Images/hacker-wallpaper.jpg);
+  background-size: cover;
+  background-position: top;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+
+.brand-name {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  font-size: 56px;
+  /* transform: rotate(15deg); */
+}
+
+.header-primary-div {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-primary-box {
+  backface-visibility: hidden;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.header-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 10px;
+
+  animation: moveToRight 0.5s ease-out;
+}
+
+.header-primary-sub {
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 17.5px;
+
+  animation: moveToLeft 0.5s ease-out;
+}
+
+@keyframes moveToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  color: #868e96;
+  border-radius: 100px;
+  padding: 15px 40px;
+  font-size: 24px;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn-animated {
+  animation: moveToTop 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+@keyframes moveToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
