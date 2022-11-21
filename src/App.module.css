@@ -21,7 +21,7 @@ html {
 /* Smartphones (potrait and landscape) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   html {
-    font-size: 14%;
+    font-size: 15%;
   }
 }
 
@@ -39,16 +39,16 @@ html {
   }
 }
 
-/* iPads (potrait and landscape) */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1080px) {
-  html {
-    font-size: 27%;
-  }
-}
-
 /* iPads (landscape) */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1080px) and (orientation: landscape) {
     html {
-        font-size: 35%;
+        font-size: 39%;
+    }
+}
+
+/* iPads (potrait) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1080px) and (orientation: portrait) {
+    html {
+        font-size: 29%;
     }
 }
