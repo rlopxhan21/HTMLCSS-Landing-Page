@@ -23,7 +23,7 @@ const HeaderDiv = () => {
           </span>
         </h1>
         <a
-          href="#"
+          href="#home"
           className={`${styles["btn"]} ${styles["btn-white"]} ${styles["btn-animated"]}`}
         >
           Discover More About Us

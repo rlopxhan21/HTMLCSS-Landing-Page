@@ -16,16 +16,12 @@
 
 .brand-name {
   position: absolute;
-  top: 40px;
-  left: 60px;
-  font-size: 56px;
-  width: 80px;
+  top: 4rem;
+  left: 6rem;
+  font-size: 5.6rem;
+  width: 8rem;
   fill: #fff;
 }
-/* 
-.link-primary {
-
-} */
 
 .header-primary-div {
   position: absolute;
@@ -38,31 +34,35 @@
 .header-primary-box {
   backface-visibility: hidden;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .header-primary-main {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 600;
-  letter-spacing: 10px;
+  letter-spacing: 1rem;
 
-  animation: moveToRight 0.5s ease-out;
+  animation: moveToRight 1s ease-out;
 }
 
 .header-primary-sub {
   display: block;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 400;
-  letter-spacing: 17.5px;
+  letter-spacing: 1.75rem;
 
-  animation: moveToLeft 0.5s ease-out;
+  animation: moveToLeft 1s ease-out;
 }
 
 @keyframes moveToRight {
   0% {
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateX(-20rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
   }
 
   100% {
@@ -74,7 +74,11 @@
 @keyframes moveToLeft {
   0% {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(20rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -86,27 +90,27 @@
 .btn:link,
 .btn:visited {
   color: #868e96;
-  border-radius: 100px;
-  padding: 15px 40px;
-  font-size: 24px;
+  border-radius: 10rem;
+  padding: 1.5rem 4rem;
+  font-size: 2.4rem;
   display: inline-block;
   transition: all 0.2s;
   position: relative;
 }
 
 .btn-animated {
-  animation: moveToTop 0.5s ease-out 0.75s;
+  animation: moveToTop 0.5s ease-out 1s;
   animation-fill-mode: backwards;
 }
 
 .btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.7rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn-white {
@@ -120,7 +124,7 @@
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -140,7 +144,7 @@
 @keyframes moveToTop {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
 
   100% {
