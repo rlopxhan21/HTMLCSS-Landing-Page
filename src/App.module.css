@@ -20,11 +20,11 @@ html {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     html {
-        font-size: 13%;
+        font-size: 15%;
     }
 }
 
-@media only screen and (min-device-width:) and (max-device-width:) {
-    
-}
+/* @media only screen and (min-device-width:) and (max-device-width:) {
+
+} */
 
